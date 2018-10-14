@@ -18,13 +18,13 @@ int main()
     while(M!=0) {
         long long Max=C[0];
         int pos = 0;
-        for(int i=1; i<N; i++) {
+        for(int i=1; i<N && C[i]<=0; i++) {
             if(C[i]>Max) {
                 Max = C[i];
                 pos=i;
             }
         }
-        A[pos]--;
+        A[pos]<=1 ? A[pos]=0 : A[pos]--;
         C[pos]=A[pos]*B[pos];
     }
     long long Max=C[0];
