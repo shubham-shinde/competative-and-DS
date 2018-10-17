@@ -17,10 +17,10 @@ int main()
         }
         int day=1, sum=a[0], sumind=1;
         // bool complete=false;
-        while(sum <= N) {
+        while(sum < N) {
             int summ=0;
             int i;
-            for(i=0; i<sum; i++) {
+            for(i=0; i<sum || (sum+summ)>=N ; i++) {
                 summ+=a[sumind+i];
             }
             day++;
