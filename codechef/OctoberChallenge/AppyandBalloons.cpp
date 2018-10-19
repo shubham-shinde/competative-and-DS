@@ -16,21 +16,12 @@ int main()
         C[i]=A[i]*B[i];
     }
     while(M!=0) {
-        long long Max=C[0];
-        int pos = 0;
-        for(int i=1; i<N && C[i]<=0; i++) {
-            if(C[i]>Max) {
-                Max = C[i];
-                pos=i;
-            }
-        }
+        long long *Max = max_element(C, C+N);
+        int pos = Max-C;
         A[pos]<=1 ? A[pos]=0 : A[pos]--;
         C[pos]=A[pos]*B[pos];
+        M--;
     }
-    long long Max=C[0];
-    for(int i=1; i<N; i++) {
-        if(C[i]>Max) Max = C[i];
-    }
-    cout<<Max<<endl;
+    cout<<*max_element(C, C+N)<<endl;
     return 0;
 }
