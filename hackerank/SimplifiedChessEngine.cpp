@@ -34,7 +34,7 @@ bool whiteTurn(vector<vector<makePair>> matrix, vector<triplate> white, vector<t
         y = white[w_index].second.second;
     if(turnOf=='N') {
         if (x+2 < SS && y-1 < SS) {
-            if(matrix[x+2][y-1].first == 'Q') return 1
+            if(matrix[x+2][y-1].first == 'Q') return 1;
             else if(matrix[x+2][y-1].first != '@' && matrix[x+2][y-1].second == 0) {
                 
             }

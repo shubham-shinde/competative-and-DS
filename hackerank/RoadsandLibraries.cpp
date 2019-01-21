@@ -4,25 +4,40 @@ using namespace std;
 
 vector<string> split_string(string);
 
-int DFS(vector<vector<int>> Adj,int V[],int vertex) {
-    int n=Adj.size();
+void showlist(list <int> g) 
+{ 
+    list <int> :: iterator it; 
+    for(it = g.begin(); it != g.end(); ++it) 
+        cout << '\t' << *it; 
+    cout << '\n'; 
+} 
+
+void printAdjecencyList(list<int> adj[], int n) {
+    for(int i=0; i<n; i++) {
+        cout<<i<<"  ";
+        showlist(adj[i]);
+        cout<<endl;
+    }
+}
+
+int DFS(list<int> Adj[],int V[],int vertex, int n) {
     int sum=1;
     V[vertex]=1;
-    for(int i=0; i<n; i++) {
-        if(V[i] != 1 && Adj[vertex][i] == 1) {
-            sum+=DFS(Adj, V, i);
+    for(auto i=Adj[vertex].begin(); i!=Adj[vertex].end(); i++) {
+        if(V[*i] != 1) {
+            sum+=DFS(Adj, V, *i, n);
         }
     }
     return sum;
 }
 
-long roadsAndLibraries(intMa n, int c_lib, int c_road, vector<vector<int>> cities) {
+long roadsAndLibraries(int n, int c_lib, int c_road, vector<vector<int>> cities) {
     int n_roads = cities.size();
     if(c_lib < c_road) {
-        return c_lib*n;
+        return (long)c_lib*n;
     }
     else {
-        vector<vector<int>> Adj(n, vector<int>(n, 0));
+        list<int> Adj[n];
         // for(int i=0; i<cities.size(); i++) {
         //     for(int j=0; j<cities[i].size(); j++) {
         //         cout<<cities[i][j]<<" ";
@@ -32,31 +47,27 @@ long roadsAndLibraries(intMa n, int c_lib, int c_road, vector<vector<int>> citie
         for(unsigned int i=0; i<cities.size(); i++) {
             int edge1 = cities[i][0]-1;
             int edge2 = cities[i][1]-1;
-            Adj[edge1][edge2] = 1;
-            Adj[edge2][edge1] = 1;
+            Adj[edge1].push_back(edge2);
+            Adj[edge2].push_back(edge1);
         }
-        for(int i=0; i<n; i++) {
-            for(int j=0; j<n; j++) {
-                cout<<Adj[i][j]<<" ";
-            }
-            cout<<endl;
-        }
+        // printAdjecencyList(Adj, n);
         int V[n] {0};
-        int cost=0;
+        long cost=0;
         for(int i=0; i<n; i++) {
             if(V[i] != 1) {
-                int dfs = DFS(Adj, V, i)-1;
+                int dfs = DFS(Adj, V, i, n)-1;
                 cost+=c_road*dfs+c_lib;
-                cout<<dfs;
+                // cout<<dfs;
             }
         }
+        // cout<<"cost"<<cost;
         return cost;
     }
 }
 
 int main()
 {
-    ofstream fout(getenv("OUTPUT_PATH"));
+    // ofstream fout(getenv("OUTPUT_PATH"));
 
     int q;
     cin >> q;
@@ -88,11 +99,12 @@ int main()
         }
 
         long result = roadsAndLibraries(n, c_lib, c_road, cities);
+        cout<<result<<endl;
 
-        fout << result << "\n";
+        // fout << result << "\n";
     }
 
-    fout.close();
+    // fout.close();
 
     return 0;
 }
