@@ -116,6 +116,9 @@ __init__	systemDesign/consistentHashing.py	/^    def __init__(self, num_machines
 get_machine	systemDesign/consistentHashing.py	/^    def get_machine(self, key):$/;"	m	class:ConsistentHash
 my_hash	systemDesign/consistentHashing.py	/^def my_hash(key):$/;"	f
 main	systemDesign/consistentHashing.py	/^def main():$/;"	f
+ll	codeforces/wayTooLongWords_71A.cpp	/^typedef long long ll;$/;"	t	file:
+convertToAbbribation	codeforces/wayTooLongWords_71A.cpp	/^string convertToAbbribation(string a) {$/;"	f
+main	codeforces/wayTooLongWords_71A.cpp	/^int main() {$/;"	f
 FORI	common/segmentTree.cpp	4;"	d	file:
 ll	common/segmentTree.cpp	/^typedef long long ll;$/;"	t	file:
 getMid	common/segmentTree.cpp	/^int getMid(int s, int e) { return s+(e-s)\/2; }$/;"	f
@@ -592,6 +595,39 @@ checkVerticalReverse	codechef/AMCICPC/wordgrid.cpp	/^vector<string> checkVertica
 recuresAndFind	codechef/AMCICPC/wordgrid.cpp	/^void recuresAndFind(vector<string> crossword, vector<string> words,int index) {$/;"	f
 buildGrid	codechef/AMCICPC/wordgrid.cpp	/^void buildGrid(vector<string> word) {$/;"	f
 main	codechef/AMCICPC/wordgrid.cpp	/^int main()$/;"	f
+FORI	codechef/MAY20B/TripleSort.cpp	3;"	d	file:
+ll	codechef/MAY20B/TripleSort.cpp	/^typedef long long ll;$/;"	t	file:
+global2s	codechef/MAY20B/TripleSort.cpp	/^vector<vector<ll>> global2s;$/;"	v
+operateOnChain	codechef/MAY20B/TripleSort.cpp	/^vector<vector<ll>> operateOnChain(vector<ll> chain) {$/;"	f
+globls2sList	codechef/MAY20B/TripleSort.cpp	/^vector<vector<ll>> globls2sList() {$/;"	f
+solveChain	codechef/MAY20B/TripleSort.cpp	/^pair<vector<vector<ll>>, ll> solveChain(vector<ll> permut, ll k) {$/;"	f
+printTripleList	codechef/MAY20B/TripleSort.cpp	/^void printTripleList(vector<vector<ll>> tripleList) {$/;"	f
+main	codechef/MAY20B/TripleSort.cpp	/^int main()  {$/;"	f
+ll	codechef/MAY20B/ChefandBitwiseProductExample.cpp	/^typedef unsigned long long ll;$/;"	t	file:
+FORI	codechef/MAY20B/ChefandBitwiseProductExample.cpp	4;"	d	file:
+forirev	codechef/MAY20B/ChefandBitwiseProductExample.cpp	5;"	d	file:
+DIG_L	codechef/MAY20B/ChefandBitwiseProductExample.cpp	/^const ll DIG_L = numeric_limits<ll>::digits;$/;"	v
+func	codechef/MAY20B/ChefandBitwiseProductExample.cpp	/^ll func(ll x, ll y, ll z) { return (x & z)*(y & z); }$/;"	f
+find_max	codechef/MAY20B/ChefandBitwiseProductExample.cpp	/^ll find_max(ll X, ll Y, ll L, ll R) {$/;"	f
+brouteForceMax	codechef/MAY20B/ChefandBitwiseProductExample.cpp	/^ll brouteForceMax(ll x, ll y, ll l, ll r) {$/;"	f
+main	codechef/MAY20B/ChefandBitwiseProductExample.cpp	/^int main()  {$/;"	f
+FORI	codechef/MAY20B/IsolationCenters.cpp	3;"	d	file:
+ll	codechef/MAY20B/IsolationCenters.cpp	/^typedef long long ll;$/;"	t	file:
+createMap	codechef/MAY20B/IsolationCenters.cpp	/^unordered_map<char, ll> createMap(string s) {$/;"	f
+findQuery	codechef/MAY20B/IsolationCenters.cpp	/^ll findQuery(unordered_map<char, ll> mp, ll t) {$/;"	f
+main	codechef/MAY20B/IsolationCenters.cpp	/^int main()  {$/;"	f
+FORI	codechef/MAY20B/CoronavirusSpread.cpp	3;"	d	file:
+ll	codechef/MAY20B/CoronavirusSpread.cpp	/^typedef long long ll;$/;"	t	file:
+global2s	codechef/MAY20B/CoronavirusSpread.cpp	/^vector<vector<ll>> global2s;$/;"	v
+main	codechef/MAY20B/CoronavirusSpread.cpp	/^int main()  {$/;"	f
+ll	codechef/MAY20B/ChefandBitwiseProduct.cpp	/^typedef unsigned long ll;$/;"	t	file:
+FORI	codechef/MAY20B/ChefandBitwiseProduct.cpp	4;"	d	file:
+forirev	codechef/MAY20B/ChefandBitwiseProduct.cpp	5;"	d	file:
+DIG_L	codechef/MAY20B/ChefandBitwiseProduct.cpp	/^const ll DIG_L = numeric_limits<ll>::digits;$/;"	v
+func	codechef/MAY20B/ChefandBitwiseProduct.cpp	/^ll func(ll x, ll y, ll z) { return (x & z)*(y & z); }$/;"	f
+brouteForceMax	codechef/MAY20B/ChefandBitwiseProduct.cpp	/^ll brouteForceMax(ll x, ll y, ll l, ll r) {$/;"	f
+find_max	codechef/MAY20B/ChefandBitwiseProduct.cpp	/^ll find_max(ll X, ll Y, ll L, ll R) {$/;"	f
+main	codechef/MAY20B/ChefandBitwiseProduct.cpp	/^int main()  {$/;"	f
 main	codechef/WarofXORs.cpp	/^int main() {$/;"	f
 ll	codechef/snackdown19/QualifyingtoPreElimination.cpp	/^typedef long long ll;$/;"	t	file:
 main	codechef/snackdown19/QualifyingtoPreElimination.cpp	/^int main()$/;"	f
@@ -712,6 +748,14 @@ N	codechef/OctoberChallenge/ChefandCircles.cpp	/^int N, Q;$/;"	v
 Q	codechef/OctoberChallenge/ChefandCircles.cpp	/^int N, Q;$/;"	v
 CalMaxAndMin	codechef/OctoberChallenge/ChefandCircles.cpp	/^void CalMaxAndMin(double x, double y, double r, double x1, double y1, double r1, int query[]) {$/;"	f
 main	codechef/OctoberChallenge/ChefandCircles.cpp	/^int main()$/;"	f
+ll	codechef/april_lunchtime/chef_in_fantacy_legue.cpp	/^typedef long long ll;$/;"	t	file:
+sort_gapped	codechef/april_lunchtime/chef_in_fantacy_legue.cpp	/^void sort_gapped(ll start, ll g, vector<ll>& a) {$/;"	f
+is_sorted	codechef/april_lunchtime/chef_in_fantacy_legue.cpp	/^string is_sorted(vector<ll>& a) {$/;"	f
+main	codechef/april_lunchtime/chef_in_fantacy_legue.cpp	/^int main() {$/;"	f
+ll	codechef/april_lunchtime/another_birthday_present.cpp	/^typedef long long ll;$/;"	t	file:
+sort_gapped	codechef/april_lunchtime/another_birthday_present.cpp	/^void sort_gapped(ll start, ll g, vector<ll>& a) {$/;"	f
+is_sorted	codechef/april_lunchtime/another_birthday_present.cpp	/^string is_sorted(vector<ll>& a) {$/;"	f
+main	codechef/april_lunchtime/another_birthday_present.cpp	/^int main() {$/;"	f
 FORI	codechef/OctoberLunchtime/WeirdQuestion.cpp	4;"	d	file:
 FORJ	codechef/OctoberLunchtime/WeirdQuestion.cpp	5;"	d	file:
 FORIMINUS	codechef/OctoberLunchtime/WeirdQuestion.cpp	7;"	d	file:
@@ -740,14 +784,3 @@ findNextState	Aho-Corasick.cpp	/^int findNextState(int currentState, char nextIn
 searchWords	Aho-Corasick.cpp	/^void searchWords(string arr[], int k, string text)$/;"	f
 main	Aho-Corasick.cpp	/^int main()$/;"	f
 competative-and-DS	README.md	/^# competative-and-DS$/;"	h
-ll	codeforces/wayTooLongWords_71A.cpp	/^typedef long long ll;$/;"	t	file:
-convertToAbbribation	codeforces/wayTooLongWords_71A.cpp	/^string convertToAbbribation(string a) {$/;"	f
-main	codeforces/wayTooLongWords_71A.cpp	/^int main() {$/;"	f
-ll	codechef/april_lunchtime/another_birthday_present.cpp	/^typedef long long ll;$/;"	t	file:
-sort_gapped	codechef/april_lunchtime/another_birthday_present.cpp	/^void sort_gapped(ll start, ll g, vector<ll>& a) {$/;"	f
-is_sorted	codechef/april_lunchtime/another_birthday_present.cpp	/^string is_sorted(vector<ll>& a) {$/;"	f
-main	codechef/april_lunchtime/another_birthday_present.cpp	/^int main() {$/;"	f
-ll	codechef/april_lunchtime/chef_in_fantacy_legue.cpp	/^typedef long long ll;$/;"	t	file:
-sort_gapped	codechef/april_lunchtime/chef_in_fantacy_legue.cpp	/^void sort_gapped(ll start, ll g, vector<ll>& a) {$/;"	f
-is_sorted	codechef/april_lunchtime/chef_in_fantacy_legue.cpp	/^string is_sorted(vector<ll>& a) {$/;"	f
-main	codechef/april_lunchtime/chef_in_fantacy_legue.cpp	/^int main() {$/;"	f
