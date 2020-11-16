@@ -6,13 +6,13 @@ typedef long long ll;
 
 int main()
 {
-    string i;
-    cin>>i;
-    for(auto j=0; j<i.length(); j++) {
-        int jj = int(i[j]);
-        jj = 97 + (jj-97 + 3)%26;
-        i[j] = char(jj);
-    }
-    cout<<i;
-    return 0;
+	string i;
+	cin>>i;
+	for(auto j=0; j<i.length(); j++) {
+		int jj = int(i[j]);
+		jj = 97 + (jj-97 + 3)%26;
+		i[j] = char(jj);
+	}
+	cout<<i;
+	return 0;
 }
