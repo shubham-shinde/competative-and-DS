@@ -38,6 +38,16 @@
 
 #define FORI(s, n) for(int i=s; i<=n; i++)
 
+ll mul(ll n, ll x) {
+	return ((n%mod)*(x%mod))%mod;
+}
+ll sum(ll n, ll x) {
+	return ((n%mod)+(x%mod))%mod;
+}
+ll sub(ll n, ll x) {
+	return ((n%mod)-(x%mod))%mod;
+}
+
 // defining 2D vector of defined size ---  vector<vector<long>> dp(row, vector<long> (col, -1));
 
 template<typename T>  //print list and vector
