@@ -1,4 +1,3 @@
-//for finding sum of elements within range.
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -22,7 +21,7 @@ int main() {
     cout<<n[0][1]<<' '<<m[0][1]<<endl;
     FORI(1, mi-1) {
         cout<<n[i][1]<<' '<<m[i][1]<<endl;
-        cout<<n[i-1][1]<<' '<<m[i][1]<<endl;        
+        cout<<n[i-1][1]<<' '<<m[i][1]<<endl;
     }
     if(mi == N) {
         FORI(N, M-1) {

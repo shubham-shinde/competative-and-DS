@@ -6,8 +6,6 @@ using namespace std;
 int main()
 {
     int T; cin >> T;
-    int n,m;
-
     while(T--) {
         int D; cin>>D;
         vector<vector<int>> dp;
