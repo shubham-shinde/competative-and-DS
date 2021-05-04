@@ -1,0 +1,681 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20210423.172504.190515.0.001.json",
+    "dumpEventTime": "2021-04-23T17:25:04Z",
+    "dumpEventTimeStamp": "1619178904255",
+    "processId": 190515,
+    "cwd": "/home/lenovo/Desktop/work/interview/graph",
+    "commandLine": [
+      "node",
+      "snake_and_ladder.js"
+    ],
+    "nodejsVersion": "v12.13.0",
+    "glibcVersionRuntime": "2.31",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.13.0",
+      "v8": "7.7.299.13-node.12",
+      "uv": "1.32.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.4.0-70-generic",
+    "osVersion": "#78-Ubuntu SMP Fri Mar 19 13:29:52 UTC 2021",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 2919,
+        "user": 127687400,
+        "nice": 588600,
+        "sys": 33368200,
+        "idle": 854738000,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 2948,
+        "user": 128419900,
+        "nice": 468800,
+        "sys": 32971400,
+        "idle": 8840500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 2948,
+        "user": 127855700,
+        "nice": 546500,
+        "sys": 32426200,
+        "idle": 8838400,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 2969,
+        "user": 131675000,
+        "nice": 507600,
+        "sys": 30587200,
+        "idle": 8850000,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 2999,
+        "user": 127951100,
+        "nice": 481100,
+        "sys": 33208500,
+        "idle": 8856200,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 2948,
+        "user": 130644000,
+        "nice": 415700,
+        "sys": 32886900,
+        "idle": 8832700,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 2948,
+        "user": 125586500,
+        "nice": 465400,
+        "sys": 32407800,
+        "idle": 8815500,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz",
+        "speed": 2965,
+        "user": 127115100,
+        "nice": 450800,
+        "sys": 33108100,
+        "idle": 8860900,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlp2s0",
+        "internal": false,
+        "mac": "38:de:ad:0e:c6:ad",
+        "address": "192.168.1.108",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "docker0",
+        "internal": false,
+        "mac": "02:42:e2:eb:65:11",
+        "address": "172.17.0.1",
+        "netmask": "255.255.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlp2s0",
+        "internal": false,
+        "mac": "38:de:ad:0e:c6:ad",
+        "address": "fe80::524f:9d92:8538:9df0",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 2
+      },
+      {
+        "name": "docker0",
+        "internal": false,
+        "mac": "02:42:e2:eb:65:11",
+        "address": "fe80::42:e2ff:feeb:6511",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      },
+      {
+        "name": "vethf16f778",
+        "internal": false,
+        "mac": "aa:a7:c7:de:9e:14",
+        "address": "fe80::a8a7:c7ff:fede:9e14",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 8
+      },
+      {
+        "name": "vethab961ad",
+        "internal": false,
+        "mac": "12:63:2f:09:38:76",
+        "address": "fe80::1063:2fff:fe09:3876",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 10
+      },
+      {
+        "name": "veth7de7c9e",
+        "internal": false,
+        "mac": "e6:2e:d4:29:f5:78",
+        "address": "fe80::e42e:d4ff:fe29:f578",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 12
+      },
+      {
+        "name": "veth7af4f44",
+        "internal": false,
+        "mac": "66:88:e7:77:3d:54",
+        "address": "fe80::6488:e7ff:fe77:3d54",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 14
+      },
+      {
+        "name": "veth19ff4d2",
+        "internal": false,
+        "mac": "8e:61:34:75:04:68",
+        "address": "fe80::8c61:34ff:fe75:468",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 16
+      },
+      {
+        "name": "veth3af9bbf",
+        "internal": false,
+        "mac": "8a:68:cc:2a:44:ae",
+        "address": "fe80::8868:ccff:fe2a:44ae",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 18
+      },
+      {
+        "name": "veth6dfa074",
+        "internal": false,
+        "mac": "7a:2d:da:92:54:97",
+        "address": "fe80::782d:daff:fe92:5497",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 20
+      },
+      {
+        "name": "veth4ee5989",
+        "internal": false,
+        "mac": "ae:d1:c2:7c:15:2c",
+        "address": "fe80::acd1:c2ff:fe7c:152c",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 22
+      },
+      {
+        "name": "vethae266a0",
+        "internal": false,
+        "mac": "0a:1f:69:07:07:6a",
+        "address": "fe80::81f:69ff:fe07:76a",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 24
+      },
+      {
+        "name": "vethac46c8b",
+        "internal": false,
+        "mac": "56:6d:93:6b:bb:d9",
+        "address": "fe80::546d:93ff:fe6b:bbd9",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 26
+      },
+      {
+        "name": "vethc462256",
+        "internal": false,
+        "mac": "ae:af:0d:66:06:84",
+        "address": "fe80::acaf:dff:fe66:684",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 28
+      },
+      {
+        "name": "veth439c5e6",
+        "internal": false,
+        "mac": "aa:1c:4e:23:42:a7",
+        "address": "fe80::a81c:4eff:fe23:42a7",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 30
+      },
+      {
+        "name": "vethc586a34",
+        "internal": false,
+        "mac": "ca:ae:ff:b4:33:7e",
+        "address": "fe80::c8ae:ffff:feb4:337e",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 32
+      },
+      {
+        "name": "veth8eeb8df",
+        "internal": false,
+        "mac": "5e:05:04:99:7f:d7",
+        "address": "fe80::5c05:4ff:fe99:7fd7",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 34
+      },
+      {
+        "name": "vethca16769",
+        "internal": false,
+        "mac": "7e:99:0c:64:ec:3d",
+        "address": "fe80::7c99:cff:fe64:ec3d",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 36
+      },
+      {
+        "name": "veth7577798",
+        "internal": false,
+        "mac": "ae:5a:ab:04:1a:ad",
+        "address": "fe80::ac5a:abff:fe04:1aad",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 38
+      },
+      {
+        "name": "veth1810d86",
+        "internal": false,
+        "mac": "66:54:19:d6:65:23",
+        "address": "fe80::6454:19ff:fed6:6523",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 40
+      },
+      {
+        "name": "veth9abcc63",
+        "internal": false,
+        "mac": "86:26:f4:4d:8b:cd",
+        "address": "fe80::8426:f4ff:fe4d:8bcd",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 42
+      },
+      {
+        "name": "veth4877160",
+        "internal": false,
+        "mac": "2e:2f:7a:43:4a:e1",
+        "address": "fe80::2c2f:7aff:fe43:4ae1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 44
+      },
+      {
+        "name": "vethecba11d",
+        "internal": false,
+        "mac": "6a:7e:64:9c:62:bb",
+        "address": "fe80::687e:64ff:fe9c:62bb",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 46
+      },
+      {
+        "name": "veth1283ca8",
+        "internal": false,
+        "mac": "b2:f1:7b:6a:0c:08",
+        "address": "fe80::b0f1:7bff:fe6a:c08",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 48
+      }
+    ],
+    "host": "shubham"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b027f5",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [node]"
+    },
+    {
+      "pc": "0x00000000009d9fc3",
+      "symbol": "node::OnFatalError(char const*, char const*) [node]"
+    },
+    {
+      "pc": "0x0000000000b37dbe",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000b38139",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]"
+    },
+    {
+      "pc": "0x0000000000ce34f5",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000ce3b86",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [node]"
+    },
+    {
+      "pc": "0x0000000000cefa1a",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000cf0925",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]"
+    },
+    {
+      "pc": "0x0000000000cf3338",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [node]"
+    },
+    {
+      "pc": "0x0000000000cb9c67",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [node]"
+    },
+    {
+      "pc": "0x0000000000fefcf9",
+      "symbol": "v8::internal::Runtime_AllocateInOldGeneration(int, unsigned long*, v8::internal::Isolate*) [node]"
+    },
+    {
+      "pc": "0x00000000013725d9",
+      "symbol": " [node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2141863936,
+    "totalCommittedMemory": 2138726832,
+    "usedMemory": 2136565160,
+    "availableMemory": 58275912,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32568,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 2176,
+        "capacity": 1047488,
+        "used": 0,
+        "available": 1047488
+      },
+      "old_space": {
+        "memorySize": 1862119424,
+        "committedMemory": 1861789144,
+        "capacity": 1859790984,
+        "used": 1859790984,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 189280,
+        "capacity": 156736,
+        "used": 156736,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 528384,
+        "committedMemory": 282816,
+        "capacity": 203040,
+        "used": 203040,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 276381696,
+        "committedMemory": 276381696,
+        "capacity": 276378552,
+        "used": 276378552,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047488,
+        "used": 0,
+        "available": 1047488
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 39.109,
+    "kernelCpuSeconds": 1.45738,
+    "cpuConsumptionPercent": 338.053,
+    "maxRss": 2672279552,
+    "pageFaults": {
+      "IORequired": 19,
+      "IONotRequired": 789198
+    },
+    "fsActivity": {
+      "reads": 2192,
+      "writes": 24
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 11.6378,
+    "kernelCpuSeconds": 0.961799,
+    "cpuConsumptionPercent": 104.996,
+    "fsActivity": {
+      "reads": 2192,
+      "writes": 24
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "GJS_DEBUG_TOPICS": "JS ERROR;JS LOG",
+    "CONDA_PROMPT_MODIFIER": "",
+    "TMUX": "/tmp//tmux-1000/default,16761,1",
+    "rvm_script_name": "",
+    "USER": "lenovo",
+    "rvm_gemstone_package_file": "",
+    "rvm_pretty_print_flag": "",
+    "rvm_quiet_flag": "",
+    "rvm_ruby_bits": "",
+    "rvm_hook": "",
+    "SSH_AGENT_PID": "1978",
+    "XDG_SESSION_TYPE": "x11",
+    "GIT_PROMPT_EXECUTABLE": "python",
+    "SHLVL": "3",
+    "ROWS": "27",
+    "CONDA_SHLVL": "1",
+    "HOME": "/home/lenovo",
+    "LESS": "-R",
+    "OLDPWD": "/home/lenovo/Desktop/work/interview",
+    "DESKTOP_SESSION": "ubuntu",
+    "NVM_BIN": "/home/lenovo/.nvm/versions/node/v12.13.0/bin",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "ZSH": "/home/lenovo/.oh-my-zsh",
+    "rvm_sdk": "",
+    "GNOME_SHELL_SESSION_MODE": "ubuntu",
+    "GTK_MODULES": "gail:atk-bridge",
+    "PAGER": "less",
+    "MANAGERPID": "1626",
+    "VIM_TERMINAL": "802",
+    "VIM_SERVERNAME": "",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "rvm_gemstone_url": "",
+    "COLORTERM": "truecolor",
+    "_CE_M": "",
+    "NVM_DIR": "/home/lenovo/.nvm",
+    "rvm_alias_expanded": "",
+    "VIM": "/usr/share/vim",
+    "IM_CONFIG_PHASE": "1",
+    "MANDATORY_PATH": "/usr/share/gconf/ubuntu.mandatory.path",
+    "LOGNAME": "lenovo",
+    "VIMRUNTIME": "/usr/share/vim/vim82",
+    "JOURNAL_STREAM": "9:51641",
+    "_": "/usr/bin/entr",
+    "rvm_bin_path": "/home/lenovo/.rvm/bin",
+    "DEFAULTS_PATH": "/usr/share/gconf/ubuntu.default.path",
+    "IRBRC": "/home/lenovo/.rvm/rubies/ruby-2.6.4/.irbrc",
+    "RUBY_VERSION": "ruby-2.6.4",
+    "XDG_SESSION_CLASS": "user",
+    "rvm_ruby_make_install": "",
+    "rvm_use_flag": "",
+    "COLORS": "256",
+    "TERM": "xterm-256color",
+    "USERNAME": "lenovo",
+    "COLUMNS": "211",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "_CE_CONDA": "",
+    "WINDOWPATH": "2",
+    "PATH": "/home/lenovo/anaconda3/bin:/home/lenovo/anaconda3/condabin:/home/lenovo/.nvm/versions/node/v12.13.0/bin:/home/lenovo/.rvm/gems/ruby-2.6.4/bin:/home/lenovo/.rvm/gems/ruby-2.6.4@global/bin:/home/lenovo/.rvm/rubies/ruby-2.6.4/bin:/home/lenovo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/lenovo/.rvm/bin:/home/lenovo/.rvm/bin:/home/lenovo/.rvm/bin:/home/lenovo/.rvm/bin:/home/lenovo/.fzf/bin:/home/lenovo/.rvm/bin:/home/lenovo/.rvm/bin",
+    "INVOCATION_ID": "86e4965d21d440c493d5b528109035b2",
+    "SESSION_MANAGER": "local/shubham:@/tmp/.ICE-unix/2020,unix/shubham:/tmp/.ICE-unix/2020",
+    "rvm_ruby_make": "",
+    "GNOME_TERMINAL_SCREEN": "/org/gnome/Terminal/screen/a1886b5a_3733_4023_8645_36f4b93bcc5a",
+    "XDG_MENU_PREFIX": "gnome-",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "rvm_nightly_flag": "",
+    "DISPLAY": ":0",
+    "MY_RUBY_HOME": "/home/lenovo/.rvm/rubies/ruby-2.6.4",
+    "rvm_ruby_file": "",
+    "LANG": "en_IN",
+    "XDG_CURRENT_DESKTOP": "ubuntu:GNOME",
+    "GNOME_TERMINAL_SERVICE": ":1.286",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "XAUTHORITY": "/run/user/1000/gdm/Xauthority",
+    "XDG_SESSION_DESKTOP": "ubuntu",
+    "XMODIFIERS": "@im=ibus",
+    "__GIT_PROMPT_DIR": "/home/lenovo/zsh-git-prompt",
+    "CONDA_PYTHON_EXE": "/home/lenovo/anaconda3/bin/python",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "is_vim": "ps -o state= -o comm= -t '#{pane_tty}'     | grep -iqE '^[^TXZ ]+ +(\\S+\\/)?g?(view|n?vim?x?)(diff)?$'",
+    "COC_VIMCONFIG": "/home/lenovo/.vim",
+    "COC_DATA_HOME": "/home/lenovo/.config/coc",
+    "SHELL": "/usr/bin/zsh",
+    "rvm_silent_flag": "",
+    "GDMSESSION": "ubuntu",
+    "QT_ACCESSIBILITY": "1",
+    "rvm_prefix": "/home/lenovo",
+    "tmux_version": "$(tmux -V | sed -En \"s/^tmux ([0-9]+(.[0-9]+)?).*/\\1/p\")",
+    "rvm_ruby_mode": "",
+    "MYVIMRC": "/home/lenovo/.vimrc",
+    "CONDA_DEFAULT_ENV": "base",
+    "GEM_HOME": "/home/lenovo/.rvm/gems/ruby-2.6.4",
+    "rvm_proxy": "",
+    "GJS_DEBUG_OUTPUT": "stderr",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "rvm_version": "1.29.9 (latest)",
+    "QT_IM_MODULE": "ibus",
+    "rvm_docs_type": "",
+    "GEM_PATH": "/home/lenovo/.rvm/gems/ruby-2.6.4:/home/lenovo/.rvm/gems/ruby-2.6.4@global",
+    "PWD": "/home/lenovo/Desktop/work/interview/graph",
+    "FZF_DEFAULT_COMMAND": "ag -g \"\"",
+    "CONDA_EXE": "/home/lenovo/anaconda3/bin/conda",
+    "NVM_CD_FLAGS": "-q",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-ubuntu:/etc/xdg",
+    "XDG_DATA_DIRS": "/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop",
+    "rvm_only_path_flag": "",
+    "rvm_niceness": "",
+    "LINES": "27",
+    "CONDA_PREFIX": "/home/lenovo/anaconda3",
+    "TMUX_PLUGIN_MANAGER_PATH": "/home/lenovo/.tmux/plugins/",
+    "rvm_bin_flag": "",
+    "TMUX_PANE": "%33",
+    "VTE_VERSION": "6003",
+    "rvm_path": "/home/lenovo/.rvm"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 67108864,
+      "hard": 67108864
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 62956,
+      "hard": 62956
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
